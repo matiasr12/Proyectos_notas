@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página del Profesor</title>
+    <style>
+        /* Estilos CSS para la barra de navegación */
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333; /* Color de fondo de la barra de navegación */
+        }
+
+        ul.navbar li {
+            float: left;
+        }
+
+        ul.navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            height: 100%; /* Ajusta la altura de los elementos para centrar verticalmente */
+        }
+
+        ul.navbar li a:hover {
+            background-color: #444; /* Color de fondo al pasar el cursor por encima del enlace */
+        }
+
+        /* Estilos para el menú del profesor */
+        .menu-profesor {
+            text-align: center;
+            margin-top: 300px; /* Espacio superior para el menú */
+            background-color: rgba(0, 0, 255, 0.5);
+            
+        }
+
+        .menu-profesor button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Barra de navegación -->
+<ul class="navbar">
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Acerca de</a></li>
+    <li><a href="#">Contacto</a></li>
+</ul>
+
+<div class="content">
+    <!-- Contenido de la página del profesor -->
+    <div class="menu-profesor">
+        <a href="{% url 'notas' %}"><button>Notas</button></a>
+        <a href="{% url 'anotaciones' %}"><button>anotaciones</button></a>
+        <a href="{% url 'actividadesp' %}"><button>actividades</button></a>
+    </div>
+</div>
+
+</body>
+</html>

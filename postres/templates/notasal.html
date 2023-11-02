@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mis Notas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Estilos para la barra de navegación en la parte superior */
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        /* Estilos para separar el contenido principal de la barra de navegación */
+        .content {
+            margin-top: 60px; /* Ajusta el valor según el alto de la barra de navegación */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Barra de navegación en la parte superior -->
+<div class="top-bar">
+    <a href="#">Home</a>
+    <a href="#">Contacto</a>
+</div>
+<br>
+<br>
+
+<h1>Mis Notas</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Curso</th>
+            <th>Asignatura</th>
+            <th>Notas</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Curso 1</td>
+            <td>Asignatura A</td>
+            <td>8.5</td>
+        </tr>
+        <tr>
+            <td>Curso 2</td>
+            <td>Asignatura B</td>
+            <td>9.0</td>
+        </tr>
+        <tr>
+            <td>Curso 3</td>
+            <td>Asignatura C</td>
+            <td>7.5</td>
+        </tr>
+        <!-- Agrega más filas con tus propias notas y asignaturas -->
+    </tbody>
+</table>
+
+</body>
+</html>
